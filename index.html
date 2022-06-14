@@ -10,53 +10,73 @@
   <title>Rubens Meirelles - Portfólio</title>
 </head>
 <body>
-  <div class="side-menu">
-    <div class="me">
-      <a href="#home">
-        <img src="assets/img/me.png" alt="Rubens meirelles" />
-        <h4>Rubens Meirelles</h4> 
-      </a>  
-      <div class="social">
-        <li>
-          <a href="https://www.facebook.com/rubens.meirelles.7" target="_blank"><i class='bx bxl-facebook' ></i></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/rubensmeirelles" target="_blank"><i class='bx bxl-github' ></i></a>
-        </li>        
-        <li>
-          <a href="skype:rubens.meirelles?chat" target="_blank"><i class='bx bxl-skype' ></i></a>
-        </li>        
-      </div>   
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 col-lg-3 sticky-top side-menu">
+            <div class="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top">
+              <div class="me">
+                <a href="#home">
+                  <img src="assets/img/me.png" alt="Rubens meirelles" />
+                  <h4>Rubens Meirelles</h4> 
+                </a>  
+                <div class="social">
+                  <li>
+                    <a href="https://www.facebook.com/rubens.meirelles.7" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/rubensmeirelles" target="_blank"><i class='bx bxl-github' ></i></a>
+                  </li>        
+                  <li>
+                    <a href="skype:rubens.meirelles?chat" target="_blank"><i class='bx bxl-skype' ></i></a>
+                  </li>        
+                </div> 
+              </div>
+                <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto justify-content-between w-100 px-3 navigation">
+                  <li><a href="#home"><i class='bx bx-home' ></i>home</a></li>        
+                  <li><a href="#about"><i class='bx bx-user' ></i>about me</a></li>
+                  <li><a href="#portfolio"><i class='bx bx-briefcase' ></i>portfolio</a></li>
+                  <li><a href="#skills"><i class='bx bx-code-alt' ></i>skills</a></li>
+                  <li><a href="#contact"><i class='bx bx-envelope' ></i>contact me</a></li>
+                </ul>                
+            </div>
+        </div>
+        
+        <div class="col-sm-8 col-lg-9 p-0 content">
+          <!-- content -->
+          
+          <section class="min-vh-100 hero p-0" id="home">
+            <h1>Rubens Meirelles</h1>
+            <div class="zoomIn">
+              <i class='bx bx-code' ></i>
+              <h3>Desenvolverdor Web</h3>
+              <i class='bx bx-devices' ></i>             
+            </div>
+            <div class="down">
+              <i class='bx bx-down-arrow-alt'></i>
+            </div> 
+          </section>
+          <section class="about min-vh-100" id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum porro molestias, voluptates minus odit exercitationem aspernatur non saepe! Atque amet veniam voluptate optio fuga sint voluptatibus recusandae quis? Magni, pariatur?
+            Asperiores officia vitae, inventore repellat non nostrum ipsa architecto distinctio quisquam dolorum blanditiis qui harum excepturi quae recusandae, quaerat numquam dicta, cupiditate omnis voluptas. Eveniet nostrum sit illo voluptate id!
+            Atque asperiores repellendus accusamus vel laboriosam, possimus, tenetur beatae adipisci, rem sunt quae id culpa excepturi. Perferendis deserunt voluptate ipsum quae dolorem! Delectus dolorem laborum porro? Corporis nesciunt iste assumenda?
+            Itaque iure nostrum ab incidunt voluptatibus sunt veritatis at aperiam nesciunt maiores officia minus deleniti quae praesentium fugit, aliquam laudantium est eaque quibusdam reiciendis aliquid magnam. Inventore voluptatem soluta minima.</p>
+          </section>
+          <section class="portfolio min-vh-100" id="portfolio">
+            <h2>Portfólio</h2>
+          </section>
+          <section class="skills min-vh-100" id="skills">
+            <h2>Skills</h2>
+          </section>
+          <section class="contact min-vh-100" id="contact">
+            <h2>Contato</h2>
+          </section>      
+        </div>
     </div>
-    
-    <div class="navigation">
-      <ul>
-        <li><a href="#home"><i class='bx bx-home' ></i>home</a></li>        
-        <li><a href="#about"><i class='bx bx-user' ></i>about me</a></li>
-        <li><a href="#portfolio"><i class='bx bx-briefcase' ></i>portfolio</a></li>
-        <li><a href="#skills"><i class='bx bx-code-alt' ></i>skills</a></li>
-        <li><a href="#contact-me"><i class='bx bx-envelope' ></i>contact me</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="content">
-    <section class="hero" id="home">
-      <h1>Rubens Meirelles</h1>
-      <div class="zoomIn">
-        <i class='bx bx-code' ></i>
-        <h2>Desenvolverdor Web</h2>
-        <i class='bx bx-devices' ></i>
-      </div>
-    </section>
-  
-    <section class="about" id="about">
-      <h2>Hi</h2>
-    </section>
-  </div>
+</div>
   
 
   <script src="assets/js/script.js"></script>
