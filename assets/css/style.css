@@ -21,6 +21,7 @@ a{
   --primary-variant: #002B45;
   --secondary: #FBFBFF;
   --bg-color: #0B4F6C;
+  --blue-color: #01BAEF;
   --bg-ligth-gray: #FBFBFF;
   --bg-gray: #D6D6D6;
   --bg-ligth: #FDFFFC;
@@ -39,13 +40,16 @@ section{
 
 section h2{
   padding-bottom: 10px;
+  text-align: center;
 }
 
 section h2::after{
   content: '';
-  width: 30px;
-  height: 5px;
-  color: var(--primary-variant);
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-variant);
+  margin: 20px auto;
+  display: block;
 }
 
 /*SIDE NAV*/
@@ -181,9 +185,12 @@ section h2::after{
     }
   } 
 
-.down{
+  .down{
+    margin-top: 150px;
+  }
+
+.down a{
   opacity: 0;
-  margin-top: 150px;
   font-size: 30px;
   color: var(--primary-variant);
   transition: opacity 2s ease-in;
@@ -212,7 +219,37 @@ section h2::after{
 }
 
 .skills{
-  background-color: var(--bg-ligth);
+  background-color: var(--bg-ligth-gray);
+}
+
+.my-skills{
+  padding: 20%;
+}
+
+.card{
+  cursor: pointer;
+  transition: .8s;
+}
+
+.card:hover{
+  background-color: var(--blue-color);
+  transform: scale3d(1.3, 1.3, 1.3);
+}
+
+.card i{
+  transition: 1.1s;
+}
+
+.card:hover i{
+  color: var(--secondary);
+}
+
+.card-body i{
+  font-size: 4em;
+}
+
+.contact{
+  background-color: var(--bg-gray);
 }
 
 
