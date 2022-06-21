@@ -11,102 +11,98 @@
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-4 col-lg-2 sticky-top side-menu">
-            <div class="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top">
-              <div class="me">
-                <a href="#home">
-                  <img src="assets/img/me.png" alt="Rubens meirelles" />
-                  <h4>Rubens Meirelles</h4> 
-                </a>  
-                <div class="social">
-                  <li>
-                    <a href="https://www.facebook.com/rubens.meirelles.7" target="_blank"><i class='bx bxl-facebook' ></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/rubensmeirelles" target="_blank"><i class='bx bxl-github' ></i></a>
-                  </li>        
-                  <li>
-                    <a href="skype:rubens.meirelles?chat" target="_blank"><i class='bx bxl-skype' ></i></a>
-                  </li>        
-                </div> 
-              </div>
-                <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto justify-content-between w-100 px-3 navigation">
-                  <li><a href="#home"><i class='bx bx-home' ></i>home</a></li>        
-                  <li><a href="#about"><i class='bx bx-user' ></i>about me</a></li>
-                  <li><a href="#portfolio"><i class='bx bx-briefcase' ></i>portfolio</a></li>
-                  <li><a href="#skills"><i class='bx bx-code-alt' ></i>skills</a></li>
-                  <li><a href="#contact"><i class='bx bx-envelope' ></i>contact me</a></li>
-                </ul>                
+    <section class="hero zoomIn">
+      <div class="portfolio">
+        <h1>PORT<span>FOLIO</span></h1>
+        <h3>Desenvolvedor Web</h3>
+      </div>
+      <div class="developer">
+        <h4>
+          <i class='bx bx-code' ></i>
+          <p>Rubens meirelles</p>
+          <i class='bx bx-code-alt' ></i>  
+        </h4>
+      </div>      
+    </section>
+    
+    <hr>
+
+    <section class="about">
+      <div class="container d-flex">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="photo">
+              <img src="assets/img/me.svg" alt="">
             </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-8">
+            <div class="details">
+              <h2>Sobre mim</h2>
+              <div class="about-me">
+                <li>Rubens de Deus Meirelles</li>
+                <li>| 47 anos |</li>
+                <li> Brasília - DF</li>
+              </div>
+              <div class="description">
+                Olá, meu nome é Rubens, sou Desenvolvedor Web e posso ajudar você a tirar o seu projeto do papel. <br> Seja ele um site, sistema ou o que desejar. Tenho conhecimentos em HTML, CSS, Javascript dentre outras linguagens. Confira mais na seção de skills. <br> No meu tempo livre gosto de ouvir músicas e tocar meu instrumento favorito, sou baterista de paixão. <br><br> Quer conhecer meus projetos? Dê uma olhada na seção de <a href="#portfolio">Portfólio.</a> <br><br> Será um prazer construir seu projeto. <br><br>Entre em contato comigo, terei o maior prazer em atendê-lo.
+              </div>
+            </div>
+          </div>
         </div>
         
-        <div class="col-sm-8 col-lg-10 p-0 content">
-          <!-- content -->
-          
-          <section class="min-vh-100 hero p-0" id="home">
-            <h1>Rubens Meirelles</h1>
-            <div class="zoomIn">
-              <i class='bx bx-code' ></i>
-              <h3>Desenvolverdor Web</h3>
-              <i class='bx bx-devices' ></i>             
-            </div>
-            <div class="down">
-              <a href="#about"><i class='bx bx-down-arrow-alt'></i></a>              
-            </div> 
-          </section>
-          <section class="about min-vh-100" id="about">
-            <h2>Sobre Mim</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum porro molestias, voluptates minus odit exercitationem aspernatur non saepe! Atque amet veniam voluptate optio fuga sint voluptatibus recusandae quis? Magni, pariatur?
-            Asperiores officia vitae, inventore repellat non nostrum ipsa architecto distinctio quisquam dolorum blanditiis qui harum excepturi quae recusandae, quaerat numquam dicta, cupiditate omnis voluptas. Eveniet nostrum sit illo voluptate id!
-            Atque asperiores repellendus accusamus vel laboriosam, possimus, tenetur beatae adipisci, rem sunt quae id culpa excepturi. Perferendis deserunt voluptate ipsum quae dolorem! Delectus dolorem laborum porro? Corporis nesciunt iste assumenda?
-            Itaque iure nostrum ab incidunt voluptatibus sunt veritatis at aperiam nesciunt maiores officia minus deleniti quae praesentium fugit, aliquam laudantium est eaque quibusdam reiciendis aliquid magnam. Inventore voluptatem soluta minima.</p>
-          </section>
-          <section class="portfolio min-vh-100" id="portfolio">
-            <h2>Portfólio</h2>
-          </section>
-          <section class="skills min-vh-100" id="skills">
-            <h2>Skills</h2>
-            <div class="d-flex justify-content-center align-items-center">
-              <div class="w-100 my-skills d-flex justify-content-around">
-                <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5">
-                  <div class="card-body d-flex justify-content-center align-items-center">
-                    <i class='bx bxl-html5' ></i>
-                  </div>
-                </div>
-                <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS 3">
-                  <div class="card-body d-flex justify-content-center align-items-center">
-                    <i class='bx bxl-css3' ></i>
-                  </div>
-                </div>
-                <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
-                  <div class="card-body d-flex justify-content-center align-items-center">
-                    <i class='bx bxl-javascript' ></i>
-                  </div>
-                </div>
-                <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
-                  <div class="card-body d-flex justify-content-center align-items-center">
-                    <i class='bx bxl-github' ></i>
-                  </div>
-                </div>
-                <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
-                  <div class="card-body d-flex justify-content-center align-items-center">
-                    <i class='bx bxl-wordpress'></i>
-                  </div>
-                </div>
+        
+      </div>
+      
+    </section>
+
+    <hr>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="conainer">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="w-100 my-skills d-flex justify-content-around">
+            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <i class='bx bxl-html5' ></i>
               </div>
             </div>
-            
-          </section>
-          <section class="contact min-vh-100" id="contact">
-            <h2>Contato</h2>
-          </section>      
+            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS 3">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <i class='bx bxl-css3' ></i>
+              </div>
+            </div>
+            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <i class='bx bxl-javascript' ></i>
+              </div>
+            </div>
+            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <i class='bx bxl-github' ></i>
+              </div>
+            </div>
+            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <i class='bx bxl-wordpress'></i>
+              </div>
+            </div>
+            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="PostgreSql">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <i class='bx bxl-postgresql'></i>
+              </div>
+            </div>             
+            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <i class='bx bxl-php' ></i>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    </section>
+
+  </div>
   
 
   <script src="assets/js/script.js"></script>
