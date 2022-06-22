@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
   <title>Rubens Meirelles - Portfólio</title>
 </head>
 <body>
@@ -26,17 +27,17 @@
     </section>
     
     <hr>
-
+    
     <section class="about">
       <div class="container d-flex">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="photo">
+            <div class="photo" data-aos="fade-right">
               <img src="assets/img/me.svg" alt="">
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-8">
-            <div class="details">
+            <div class="details" data-aos="fade-left">
               <h2>Sobre mim</h2>
               <div class="about-me">
                 <li>Rubens de Deus Meirelles</li>
@@ -57,54 +58,98 @@
 
     <hr>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="conainer">
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="w-100 my-skills d-flex justify-content-around">
-            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5">
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <i class='bx bxl-html5' ></i>
+    <section class="skills" data-aos="flip-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="educational">
+              <h3>Formação</h3>
+              <p>Análise e Desenvolvimento de Sistemas</p>
+              <p>Faculdade SENAC - 2017</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-8">
+            <h2>Skills</h2>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="w-100 d-flex justify-content-around">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML 5">
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <i class='bx bxl-html5' ></i>
+                  </div>
+                </div>
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS 3">
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <i class='bx bxl-css3' ></i>
+                  </div>
+                </div>
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <i class='bx bxl-javascript' ></i>
+                  </div>
+                </div>
+                <div class="card"data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <i class='bx bxl-github' ></i>
+                  </div>
+                </div>
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <i class='bx bxl-wordpress'></i>
+                  </div>
+                </div>
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="PostgreSql">
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <i class='bx bxl-postgresql'></i>
+                  </div>
+                </div>             
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
+                  <div class="card-body d-flex justify-content-center align-items-center">
+                    <i class='bx bxl-php' ></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS 3">
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <i class='bx bxl-css3' ></i>
-              </div>
+          </div>
+        </div>       
+      </div>
+    </section>
+
+    <hr>
+    <section class="my-portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="portfolio-description">
+              <h3>Meu portfólio</h3>
+              <p>Confira alguns dos projetos desenvolvidos ao longo dos meus estudos.</p><br>
+              <p>Alguns projetos foram "clonados" apenas para finalidades de prática.</p>
             </div>
-            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <i class='bx bxl-javascript' ></i>
+          </div>
+          <div class="col-12 col-md-6 col-lg-8">
+            <div class="box-portfolio">
+              <div class="portfolio-link">
+                <a href="">
+                  <figure class="portfolio-img">
+                    <img src="assets/img/portfolio.svg" alt="" />
+                    <figcaption>Este projeto foi desenvolvido ...</figcaption>
+                  </figure>                  
+                </a>
+
+              
+                
               </div>
-            </div>
-            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <i class='bx bxl-github' ></i>
-              </div>
-            </div>
-            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="Wordpress">
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <i class='bx bxl-wordpress'></i>
-              </div>
-            </div>
-            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="PostgreSql">
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <i class='bx bxl-postgresql'></i>
-              </div>
-            </div>             
-            <div class="card" style="width: 5rem;" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
-              <div class="card-body d-flex justify-content-center align-items-center">
-                <i class='bx bxl-php' ></i>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </div>
   
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   

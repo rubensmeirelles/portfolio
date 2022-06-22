@@ -18,6 +18,11 @@ a{
   text-decoration: none
 }
 
+body{
+  overflow-x: hidden;
+  color: var(--bg-ligth)
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
 
@@ -43,7 +48,7 @@ body{
 
 .hero{
   height: 100vh;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: baseline;
 }
@@ -75,6 +80,7 @@ span{
 h3{
   color: var(--bg-gray);
   font-weight: 100;
+  margin-bottom: 20px;
 }
 
 .developer{
@@ -97,7 +103,7 @@ h3{
   opacity: 1;
   }
 
-  @-webkit-keyframes zoomIn {
+  @keyframes zoomIn {
     0% {
     opacity: 0;
     -webkit-transform: scale3d(1 , .5 , 1);
@@ -114,9 +120,9 @@ h3{
 
   /*ABOUT*/
 
-  .about, .skills{
+  .about, .skills, .my-portfolio{
     padding: 50px 0;
-    color: var(--bg-gray);
+    
   }
 
   .details{
@@ -128,7 +134,7 @@ h3{
     color: var(--bg-gray);
   }
 
-  section h2::after{
+  section h2::after, .skills h2::after{
     content: '';
     width: 100px;
     height: 3px;
@@ -166,17 +172,91 @@ h3{
 
   /*SKILLS*/
 
-  .skills h2{
-    text-align: center;
+  .educational, .portfolio-description{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .skills h2::after{
-    content: '';
-    width: 100px;
-    height: 3px;
+  .card{
+    cursor: pointer;
+    transition: .8s;
+  }
+  
+  .card:hover{
+    background-color: var(--blue-color);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  
+  .card i{
+    transition: 1.1s;
+  }
+  
+  .card:hover i{
+    color: var(--secondary);
+  }
+  
+  .card-body i{
+    font-size: 4em;
+    color: var(--primary-variant);
+  }
+
+  /*PORTFOLIO*/
+
+  .box-portfolio{
     background-color: var(--primary-variant);
-    margin: 20px auto;
-    display: block;
+    padding: 20px;
+    border-radius: 5px;
+    
   }
 
+  .box-portfolio img{
+    width: 380px;
+    border: 1px solid var(--bg-gray);
+  }
+
+  figure img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-link{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-link a{
+    color: var(--bg-ligth-gray);
+    margin: 10px;
+  }
+
+  .portfolio-img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .portfolio-img figcaption {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2em;
+    color: var(--bg-ligth);
+    background-color: var(--blue-color);
+    transition: 2.1s;
+    display: none;
+    
+  }
+
+  .portfolio-img:hover figcaption{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px;
+  }
   
