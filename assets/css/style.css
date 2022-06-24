@@ -70,11 +70,7 @@ body{
 
 span{
   color: var(--primary);
-  text-shadow: 
-               1px -1px 0px var(--bg-ligth), 
-               -1px -1px 0px var(--bg-ligth),                    
-                1px 1px 0px var(--bg-ligth),                  
-                -1px 1px 0px var(--bg-ligth);
+  color: var(--bg-ligth);
 }
 
 h3{
@@ -120,7 +116,7 @@ h3{
 
   /*ABOUT*/
 
-  .about, .skills, .my-portfolio{
+  .about, .skills, .my-portfolio, .contato{
     padding: 50px 0; 
   }
 
@@ -303,12 +299,12 @@ h3{
 
 /*MY PORTFOLIO PAGE*/
 
-.my-portfolio h2::after{
+.my-portfolio h2::after, .contato h2::after{
   content: '';
   width: 100px;
   height: 3px;
   background-color: var(--primary-variant);
-  margin: 20px AUTO;
+  margin: 20px auto;
   display: block;
 }
 
@@ -320,3 +316,61 @@ h3{
   display: flex;
   justify-content: center;
 }
+
+/*CONTATO*/
+
+.contato{
+  margin: 0 auto;
+}
+
+h5{
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.adress span{
+  font-size: .8em;
+}
+
+.location i{
+  padding: 10px;
+  font-size: 1.2em;
+  margin-right: 20px;
+  border: 1px solid var(--blue-color);
+  border-radius: 50%;
+  color: var(--bg-gray);
+}
+
+.mb-40{
+  margin-bottom:40px ;
+}
+
+label{
+  color: var(--primary);
+}
+
+.social a{
+  color: var(--primary-variant);
+}
+
+.social i{
+  font-size: 2em;
+  margin: 0 10px;
+  border: 1px solid var(--primary-variant);
+  padding: 5px;
+  border-radius: 50%;
+  transition: .8s;
+}
+
+.social-icons i:hover{
+  background-color: var(--primary-variant);
+  border: none;
+  color: var(--bg-gray);
+}
+
+textarea:focus, input:focus, select:focus {
+  outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+} 
+
