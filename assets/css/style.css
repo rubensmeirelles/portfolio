@@ -186,7 +186,7 @@ h3{
   }
   
   .card i{
-    transition: 1.1s;
+    transition: .8s;
   }
   
   .card:hover i{
@@ -339,6 +339,13 @@ h5{
   border: 1px solid var(--blue-color);
   border-radius: 50%;
   color: var(--bg-gray);
+  transition: .4s;
+}
+
+.location i:hover{
+  background-color: var(--bg-ligth);
+  color: var(--primary-variant);
+  border: 1px solid var(--bg-ligth);
 }
 
 .mb-40{
@@ -359,12 +366,12 @@ label{
   border: 1px solid var(--primary-variant);
   padding: 5px;
   border-radius: 50%;
-  transition: .8s;
+  transition: .4s;
 }
 
 .social-icons i:hover{
   background-color: var(--primary-variant);
-  border: none;
+  border: 1px solid var(--primary-variant);
   color: var(--bg-gray);
 }
 
