@@ -201,7 +201,6 @@ h3{
   /*PORTFOLIO*/
 
   .box-portfolio{
-    background-color: var(--primary-variant);
     padding: 10px;
     border-radius: 5px;
     display: flex;
@@ -308,9 +307,7 @@ h3{
   display: block;
 }
 
-.my-portfolio .box-portfolio{
-  background-color: transparent;
-}
+
 
 .back{
   display: flex;
@@ -380,4 +377,76 @@ textarea:focus, input:focus, select:focus {
     -webkit-appearance:none;
     box-shadow: none !important;
 } 
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 700px ) {
+  
+  .image{
+    position: relative;
+    width: 280px;
+    height: 250px;
+    margin: 20px;
+   }
+  
+}
+
+@media (max-width: 456px){
+  .hero h1, .details h2, .skills h2, .my-portfolio h2, .contato h2{
+    font-size: 2em;
+  }
+  
+  .hero h3, .portfolio-description h3{
+    font-size: 1.2em;
+  }
+
+  .portfolio-description p{
+    font-size: .8em;
+  }
+  
+  .photo{
+    display: none;
+  }
+  
+  .details{
+    padding: 5px;
+  }
+  
+  .about-me li{
+    font-size: .55em;
+  }
+  
+  .description{
+    font-size: .9em;
+  }
+
+  .cards{
+   flex-wrap: wrap;
+  }
+
+  .location div{
+    margin-left: -20px;
+    font-size: .9em;
+  }
+
+  .location .map iframe{
+    margin: 0;
+    width: 100%;
+  }
+
+  .contato h4{
+    font-size: 1em;
+  }
+
+  .social-icons{
+    display: flex;
+  }
+
+  .footer p{
+    font-size: .8em;
+    width: 100%;
+  }
+}
+
 
